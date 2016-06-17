@@ -147,7 +147,7 @@ function buildName(firstName: string, lastName = "Smith") {
 let result1 = buildName("Bob");                  // works correctly now, returns "Bob Smith"
 let result2 = buildName("Bob", undefined);       // still works, also returns "Bob Smith"
 let result3 = buildName("Bob", "Adams", "Sr.");  // error, too many parameters
-let result4 = buildName("Bob", "Adams");         // ah, just right
+let result4 = buildName("Bob", "Adams");         // ah, just right, returns "Bob Adams"
 ```
 
 Default-initialized parameters that come after all required parameters are treated as optional, and just like optional parameters, can be omitted when calling their respective function.
